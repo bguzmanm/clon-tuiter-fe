@@ -1,0 +1,37 @@
+body {
+    background-color: #282c34;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #fff;
+    font-size: small;
+}
+.tuits{
+    display: grid;
+    row-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tuit {
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color:  #61dafb;
+    display: grid;
+    grid-template-areas:
+        "a a"
+        "b b";
+    justify-content: flex-start;
+    padding: 20px 20px 20px 20px;
+}
+.name {
+    justify-items: flex-start;
+    justify-self: flex-start;
+    grid-area: a;
+    font-size: medium;
+}
+.name a {
+    color: #61dafb;
+    text-decoration: none;
+}
+.message {
+    grid-area: b;
+}
